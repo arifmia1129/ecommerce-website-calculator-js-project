@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart JS project</title>
+
+    <!-- tailwind cdn connect -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center my-5">Welcome to <span class="text-green-500">Our</span>
+            <span class="text-red-500">Shop</span>
+        </h1>
+    </header>
+
+    <main>
+        <section class="w-3/4 mx-auto my-10">
+            <div class="grid grid-rows-2 gap-5">
+                <div id="phone-item" class="grid grid-cols-2 bg-slate-100 p-10 rounded-xl">
+                    <div class="flex justify-center	items-center">
+                        <img width="150" height="150" src="images/product-1.png" alt="">
+                        <h3 class="text-2xl font-bold mx-4">iPhone 11 128GB Black</h3>
+                    </div>
+                    <div class="flex justify-around	items-center">
+
+                        <button id="phone-minus" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                            </svg>
+                        </button>
+
+                        <h1 id="phone-quantity" class="text-4xl font-semibold p-5 rounded-lg">1</h1>
+                        <button id="phone-plus" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </button>
+
+                        <h1 class="text-4xl font-semibold p-5 rounded-lg">$<span id="phone-price">1219</span></h1>
+                        <button id="phone-close" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div id="case-item" class="grid grid-cols-2 bg-slate-100 p-10 rounded-xl">
+                    <div class="flex justify-center	items-center">
+                        <img width="150" height="150" src="images/product-2.png" alt="">
+                        <h3 class="text-2xl font-bold mx-4">iPhone 11 Silicone Case - Black</h3>
+                    </div>
+                    <div class="flex justify-around	items-center">
+                        <button id="case-minus" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                            </svg>
+                        </button>
+
+                        <h1 id="case-quantity" class="text-4xl font-semibold p-5 rounded-lg">1</h1>
+                        <button id="case-plus" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </button>
+                        <h1 class="text-4xl font-semibold p-5 rounded-lg">$<span id="case-price">59</span></h1>
+                        <button id="case-close" class="btn bg-white p-5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="w-3/4 mx-auto my-10 bg-slate-100 p-10 text-2xl font-semibold rounded-2xl">
+            <div class="flex justify-between items-center my-1">
+                <h3>Subtotal:</h3>
+                <h3>$<span id="subtotal-price">1278</span></h3>
+            </div>
+            <div class="flex justify-between items-center my-1">
+                <h3>Tax:</h3>
+                <h3>$<span id="tax-price">0</span></h3>
+            </div>
+            <div class="flex justify-between items-center my-1">
+                <h3>Total:</h3>
+                <h3>$<span id="total-price">1278</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
